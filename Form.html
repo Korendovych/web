@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Form.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">	
+<title>Registrarse</title>	
+
+<script>
+ 
+function validate() {
+    var evento = document.forms["form"]["evento"].value;
+	var nombre = document.forms["form"]["nombre"].value;
+	var apellidos = document.forms["form"]["apellidos"].value;
+    var email = document.forms["form"]["email"].value;
+    var birthday = document.forms["form"]["birthday"].value;
+	var phone = document.forms["form"]["phone"].value;
+	var checkbox = document.forms["form"]["checkbox"].value;
+
+    if(checkbox.trim().checked)
+{
+    alert('You must agree to the terms first.');
+    return false;
+} 
+
+	//Verifico los 3 campos
+	if (nombre.trim() == "" || apellidos.trim() == "" || email.trim() == "" || birthday.trim() == "" || phone.trim() == "") {
+      alert("Algunos campos no están correctos, vuelva a revisarlos");
+	  return false;
+	}else{
+        
+		document.forms["form"]["evento"].value = evento.toUpperCase();
+		document.forms["form"]["nombre"].value = nombre.toUpperCase();
+		document.forms["form"]["apellidos"].value = apellidos.toUpperCase();
+		document.forms["form"]["email"].value = email.toUpperCase();
+        document.forms["form"]["birthday"].value = birthday.toUpperCase();
+		document.forms["form"]["phone"].value = phone.toUpperCase();
+		}
+	
+}
+
+
+</script>
+</head>
+
+
+<body>
+	<nav id="navbar">
+		<ul class="bar">
+			<li id="icon"><a href="Principal.html"> <b>Inicio</b> 
+			</a></li>
+			<li id="icon"><a href="Gaming.html"> <b>Gaming</b>
+			</a></li>
+			<li id="icon"><a href="ComicCon.html"> <b>Comic Con</b>
+			</a></li>
+		    <li id="icon"><a href="JaponWeek.html"> <b>Japon Week</b>
+			</a></li>
+			<li id="icon"><a href="Form.html"> <b>Registrarse</b>
+			</a></li>
+		</ul>
+	 </nav>
+
+<section id="Registracion">
+    <article id="art3">
+        <h4 id="form">Si desea participar en algun evento complete este formulario.</h4>
+        </br> </br>
+        <p id="orden">Segun ORDEN 535/2021, de 28 de abril, de la Consejeria de Sanidad, por la que se adoptan medidas especificas </br>
+                      temporales y excepcionales por razón de salud publica pala la contención del COVID-19 en la Comunidad de Madrid.  </br>
+            <b>Limitación del acceso se requíere un registro prevío para entrar.</b>
+        </p>
+         </br> 
+        <div class="container" id="div3">
+
+            <form name="form" method="POST" action="http://localhost/form.php" onsubmit="return validateForm()">
+
+                <label for="evento">Elige el nombre del evento </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>
+                <select id="evento" name="evento" size=1 required="required">
+                    <option value="Gaming" id ="Gaming" selected>&nbsp;&nbsp;Gaming - 20 Junio 2021, Madrid&nbsp;&nbsp;&nbsp;</option>
+                    <option value="JaponWeek" id="JaponWeek">&nbsp;&nbsp;Japon Week - 26 Junio 2021, Madrid</option>
+                    <option value="ComicCon" id="ComicCon">&nbsp;&nbsp;Comic Con - 27 Junio 2021, Madrid&nbsp;&nbsp;</option>
+                </select> </br>
+
+               <label for="nombre">Nombre</label>	
+               <input for="nombre" type="text" id="nombre" name="nombre required="required">&nbsp;&nbsp;</br>
+               <label for="apellidos">Apellidos</label>
+               <input for="apellidos" type="text" id="apellidos" name="apellidos" required="required"></br></br>
+               <label for="birthday">Fecha de nacimiento</label> <input type="date" id="birthday" name="birthday" required="required">&nbsp;&nbsp;</br>
+               <label for="tel">Telefono</label>&nbsp;&nbsp; <input type="tel" id="tel" name="tel" placeholder="&nbsp;&nbsp;642-223-111" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required="required"></br>
+               <label for="email">Email</label> <input type="email" id="email" name="email" placeholder="&nbsp;&nbsp;nombre.apellidos@gmail.com" required="required"> </br></br>   
+               <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" required="required">
+               <label for="checkbox">He leído y acepto las  <a href="https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov/ciudadania.htm" target="_blank">condiciones.</a></label>
+               </br>
+               </br></br>  
+               <button type="submit" class="btn btn-success">Enviar</button>
+             </form> 
+        </div>
+    </article>
+</section>
+		<footer>
+		<p id="f1">
+<i>Contáctanos:</i></br>
+Tel.: +34 91 722 30 00</br>
+Avda. del Partenón, 5 28042 Madrid, España / Spain
+</p>
+	</footer>
+</body>
+</html>
