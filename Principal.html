@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EVENTOS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Principal.css">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+
+</head>
+
+
+
+<body>
+	<nav id="navbar">
+		<ul class="bar">
+			<li id="icon"><a href="#Principal"> <b>Inicio</b> </a>
+			</li>
+			<li id="icon"><a href="Gaming.html"> <b>Gaming</b> </a>
+			</li>
+			</a>
+			</li>
+			<li id="icon"><a href="ComicCon.html"> <b>Comic Con</b> </a>
+			</li>
+			<li id="icon"><a href="JaponWeek.html"> <b>Japon Week</b> </a>
+			</li>
+			<li id="icon"><a href="Form.html"> <b>Registrarse</b> </a>
+			</li>
+		</ul>
+	</nav>
+	<section id="Principal" class="hidden">
+		<article id="art1">
+			<div id="demo" class="carousel slide" data-ride="carousel">
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+				</ul>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/gaming.png" alt="Gaming" width="1100" height="500">
+						<div class="carousel-caption"></div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/comiccon.png" alt="ComicCon" width="1100"
+							height="500">
+						<div class="carousel-caption"></div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/japonweek.png" alt="JaponWeek" width="1100"
+							height="500">
+						<div class="carousel-caption"></div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				</a> <a class="carousel-control-next" href="#demo" data-slide="next">
+				</a>
+			</div>
+		</article>
+	</section>
+
+	<section id="Fechas">
+		<article id="art2" class="hidden">
+			<div id="div2">
+				<p class="imgscroll">
+					<img src="img/calendario2.png" alt="Calendario">
+				</p>
+				<script>
+					ScrollReveal().reveal('.imgscroll');
+				</script>
+			</div>
+		</article>
+		<article class="hidden2">
+		   <h2>20 Junio 2021  Gaming </h2>
+		   <h2>26 Junio 2021  Japon Week </h2>
+		   <h2>27 Junio 2021  Comic Con</h2>
+		</article>	
+	</section>
+
+
+	<section id="Informacion">
+		<article id="art3">
+			<h4 id="ab">Abiertos al gran público</h4>
+			<p>Conciertos, festivales, exposiciones y actividades de ocio han
+				irrumpido con fuerza estos últimos años en la agenda de MADRID. Uno
+				de nuestros compromisos es acercar MADRID a las personas y generar
+				experiencias significativas en ferias, eventos y actividades que
+				conecten con el interés general de quienes nos rodean. Por ello,
+				nos dedicamos los 365 días son los que dedicamos a acercar a
+				nuestras audiencias todo lo que les interesa: negocios,
+				conocimiento, ocio, experiencias y futuro, sobre todo, futuro.</p>
+			</br>
+			<h4 id="ab">Una ventana al mañana</h4>
+			<p>Mejorar la experiencia de nuestros visitantes es una de
+				nuestras prioridades, y por ello desde MADRID hemos hecho una gran
+				apuesta tecnológica por liderar desarrollos de vanguardia en la
+				transformación digital de las ferias. Trabajamos e impulsamos el
+				uso de nuevas tecnologías para generar experiencias. Para ello, el
+				laboratorio de I+D de la Fundación MADRID LAB, estamos
+				desarrollando un prototipo de Feria Aumentada y fomentamos la
+				investigación de tecnologías de nueva generación. Promovemos
+				proyectos orientados a mejorar la productividad de la organización
+				administrativa pública y privada.</p>
+
+			</br>
+			<h4 id="ab">Protocolo de seguridad contra COVID-19</h4>
+			<p id="ab">
+				<b><i> Retomamos la actividad reforzando las medidas
+						sanitarias para garantizar la seguridad de nuestros expositores,
+						visitantes y staff.</i>
+				</b>
+			</p>
+			</br>
+			<ul id="segur">
+				<li>Acceso con la entrada desde el móvil, control de
+					temperatura y aforo</li>
+				<li>Obligatorio el uso de mascarillas (sin válvula)</li>
+				<li>Distancia mínima de seguridad con control decolas de espera
+					y señalética en suelo</li>
+				<li>Política de no contacto</li>
+				<li>Pantallas recordando indicaciones</li>
+				<li>Protocolo de limpieza y desinfección para expositores y
+					visitantes</li>
+				<li>Protocolos específicos de calidad del aire</li>
+			</ul>
+		</article>
+	</section>
+
+	<section id="Mapa" class="hidden">
+		<article id="art4">
+			<div id="div4">
+				<iframe
+					src="https://www.google.com/maps/d/embed?mid=19SHsegF26tOPWw_hbFICyn9cByw"
+					width="800" height="600" style="border: 0;" allowfullscreen=""
+					loading="lazy"></iframe>
+			</div>
+			<script>
+				ScrollReveal().reveal('#div4');
+			</script>
+
+		</article>
+	</section>
+
+	<footer>
+		<p id="f1">
+			<i>Contáctanos:</i></br> Tel.: +34 91 722 30 00</br> Avda. del Partenón, 5
+			28042 Madrid, España / Spain
+		</p>
+	</footer>
+</body>
+</html>
