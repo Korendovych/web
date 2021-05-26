@@ -388,6 +388,9 @@ ul {
 	text-decoration: none;
 	z-index:1;
 }
+	#topj{padding-top: 10%;
+	      margin-top: 20px;}
+	
 }
 
 @media ( max-width: 414px) and (min-width: 0px) {
@@ -464,4 +467,7 @@ ul {
 	text-decoration: none;
 	z-index:1;
 }	
+	
+	#topj{padding-top: 10%;
+	      margin-top: 20px;}
 }
