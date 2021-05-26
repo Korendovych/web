@@ -454,7 +454,8 @@ ul {
 	text-decoration: none;
 	z-index:1;
 }
-	#top{padding-top: 10%;}	
+	#top{padding-top: 10%;
+	margin-top: 20px;}	
 	
 }
 
@@ -532,5 +533,6 @@ ul {
 	text-decoration: none;
 	z-index:1;
 }	
-	#top{padding-top: 10%;}	
+	#top{padding-top: 10%;
+	      margin-top: 20px;}	
 }	
