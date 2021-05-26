@@ -408,8 +408,7 @@ ul {
 }
 
 #navbar {
-	position: sticky;
-	position: -webkit-sticky;
+	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index:1;
@@ -485,8 +484,7 @@ ul {
 }
 
 #navbar {
-	position: sticky;
-	position: -webkit-sticky;
+	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index:1;
