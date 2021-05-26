@@ -281,7 +281,8 @@ ul {
     margin: 0% auto;
     text-align: justify;
 }
-	
+	#Registracion{padding-top: 10%;
+	      margin-top: 20px;}
 }
 
 @media ( max-width: 414px) and (min-width: 0px) {
@@ -400,5 +401,8 @@ ul {
     margin: 0% auto;
     text-align: justify;
 }
+	
+	#Registracion{padding-top: 10%;
+	      margin-top: 20px;}
 	
 }      
