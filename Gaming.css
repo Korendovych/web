@@ -454,6 +454,8 @@ ul {
 	text-decoration: none;
 	z-index:1;
 }
+	#los{padding-top: 10%;}	
+	
 }
 
 @media ( max-width: 414px) and (min-width: 0px) {
@@ -530,4 +532,5 @@ ul {
 	text-decoration: none;
 	z-index:1;
 }	
+	#los{padding-top: 10%;}	
 }	
