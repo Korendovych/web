@@ -388,8 +388,8 @@ ul {
 	text-decoration: none;
 	z-index:1;
 }
-	#topj{padding-top: 10%;
-	      margin-top: 20px;}
+	#topj{padding-top: 1%;
+	      margin-top: 3px;}
 	
 }
 
@@ -468,6 +468,6 @@ ul {
 	z-index:1;
 }	
 	
-	#topj{padding-top: 10%;
-	      margin-top: 20px;}
+	#topj{padding-top: 1%;
+	      margin-top: 3px;}
 }
